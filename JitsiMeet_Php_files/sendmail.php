@@ -11,11 +11,11 @@ function sendMail($email, $subject, $message){
     $mail->Port = 587;
     $mail->SMTPAuth = true;
     $mail->Pool = true;
-    $mail->Username = 'bluebase2017@gmail.com';
-    $mail->Password = 'nbbfmqcsmsnfxmhm';
+    $mail->Username = '';
+    $mail->Password = '';
 
-    $mail->setFrom('bluebase2017@gmail.com', 'BlueBase VidCon');
-    $mail->addReplyTo('bluebase2017@gmail.com', 'BlueBase VidCon');
+    $mail->setFrom('', 'BlueBase VidCon');
+    $mail->addReplyTo('', 'BlueBase VidCon');
     $mail->addAddress($email);
 
     $mail->isHTML(true);	
